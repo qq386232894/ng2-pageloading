@@ -20,5 +20,5 @@ Pageloading effects for angular2, inspired by [PageLoadingEffects](http://tympan
 ### ThanksTo
 [PageLoadingEffects](http://tympanus.net/codrops/2014/04/23/page-loading-effects/) and [me-pageloading](https://github.com/Treri/me-pageloading)
 
-### License
+###  License
 MIT
