@@ -1,6 +1,6 @@
 {
   "name": "ng2-pageloading",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "a pageloading component for angular4",
   "keywords": [
     "angular",
@@ -15,8 +15,9 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf .awcache bundles coverage src/**/*.map src/**/*.ngfactory.ts src/**/*.ngsummary.json src/**/*.shim.ngstyle.ts src/**/*.d.ts src/**/*.metadata.json src/**/*.js tests/**/*.d.ts tests/**/*.metadata.json tests/**/*.js index.d.ts index.metadata.json index.js",
+    "bundles": "cross-env BUILD_AOT=1 npm run webpack -- --config config/webpack.prod.js  --progress --profile --bail",
     "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js",
-    "compile": "npm run clean && ngc && npm run webpack"
+    "compile": "npm run clean && ngc && npm run bundles"
   },
   "dependencies": {
     "@angular/animations": "~4.1.2",
